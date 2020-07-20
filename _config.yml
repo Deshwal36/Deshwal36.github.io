@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Algocorn3r"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Algocorn3r"
+name                     : "Shivam Deshwal"
 description              : "The Algorithm corn3r"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
