@@ -1,8 +1,8 @@
 ---
 title: "About"
-permalink: /about/
+permalink: /About/
 header:
- image: "/assests/billiard.jpeg"
+ image: "/assests/Deshwal.jpg"
 ---
 
 Experience
