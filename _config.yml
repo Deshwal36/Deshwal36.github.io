@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/images/Deshwal.jpg"
   bio              : "The Algorithm Corner"
   location         : "Gurugram , HR"
-  email            :
+  email            :  
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -115,7 +115,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Deshwal36"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-LinkedIn"
+      icon: "fa fa-LinkedIn"
       url: "https://www.linkedin.com/in/shivam-deshwal-ba9a6bb6/"
 
 # Site Footer
@@ -127,9 +127,6 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -139,12 +136,19 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Deshwal36"
+    - label: "LinkedIn"
+      icon: "fa fa-LinkedIn"
+      url: "https://www.linkedin.com/in/shivam-deshwal-ba9a6bb6/"
 
 
 # Reading Files
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
