@@ -1,9 +1,10 @@
 ---
 layout : archive 
 permalink : /Algorithm/
-title : "Algorithm post by tags"
+title : "Algorithm Blog"
 author_profile: true
 header:
-   images: "/assets/images/code.jpg"
+   images: "/assets/images/Deshwal.jpg"
 ---
 
+Algorithm posts
