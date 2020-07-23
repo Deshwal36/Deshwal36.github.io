@@ -12,19 +12,19 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    :  "dirt" #"air" ,"default" , "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    :  "default" #"air" ,"default" , "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Algocorn3r"
 title_separator          : "-"
-subtitle                 : "sub title"
+subtitle                 : "Version 1.0"
 name                     : "Shivam Deshwal"
-description              : "The Algorithm corn3r"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "The Algorithm corn3r : Blog dedicated to my understanding with alorithms"
+url                      :  "https://github.com/Deshwal36"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/Shivam.jpg"
+repository               : "Deshwal36/Algocorn3r"
+teaser                   : "/assets/images/code.jpg"
 logo                     : #"/assets/images/Shivam.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true #false , false (default)
@@ -53,7 +53,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          :  "lunr" #(default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
