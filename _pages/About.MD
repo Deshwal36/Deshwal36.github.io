@@ -2,7 +2,7 @@
 title: "About"
 permalink: /About/
 header:
- image: "/assests/Deshwal.jpg"
+ image: #"/assests/Deshwal.jpg"
 ---
 
 Experience
