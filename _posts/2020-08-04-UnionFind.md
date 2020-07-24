@@ -12,5 +12,5 @@ header:
 ##UnionFind 
 
 *Algorithm for union-find operations in c++
-[screenshot](/assests/images/UnionFind/UnionFind.jpg)
+[screenshot](/assests/images/UnionFind/Deshwal.jpg)
 
