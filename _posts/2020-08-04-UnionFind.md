@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Algocorn3r : UnionFind"
-date : 2020-08-04
+date : "2020-08-04"
 tags : [Algorihhm ,  UnionFind , Complexity:Log(N), C++]
 
 header:
@@ -12,4 +12,5 @@ header:
 ##UnionFind 
 
 *Algorithm for union-find operations in c++
+[screenshot](/assests/images/UnionFind/UnionFind.jpg)
 
