@@ -1,6 +1,7 @@
 ---
+layout : post
 title : "Algocorn3r : UnionFind"
-date : 08-04-2020
+date : 2020-08-04
 tags : [Algorihhm ,  UnionFind , Complexity:Log(N), C++]
 
 header:
