@@ -13,4 +13,5 @@ header:
 
 *Algorithm for union-find operations in c++
 [screenshot](https://deshwal36.github.io/)
+[screenshot](/assests/Deshwal.jpg)
 
