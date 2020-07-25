@@ -2,8 +2,10 @@
 main:
   - title: "About"
     url: /About/
-  - title: "Algo"
+  - title: "Blog"
     url: /Algorithm/ 
+  - title: "404"
+    url: /404/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

@@ -1,16 +1,14 @@
 ---
-layout : post
-title : "Algocorn3r : UnionFind"
-date : "2020-08-04"
-tags : [Algorihhm ,  UnionFind , Complexity:Log(N), C++]
-
-header:
-   image : "/assests/images/UnionFind/UnionFind.jpg"
-   excerpt : "Algorithm , UnionFind , Time complexity"
+layout: post
+title: "Projects"
+date: "2019-09-23"
+tags: [Algorithm]
 ---
 
-##UnionFind 
+# WIP! 
 
-*Algorithm for union-find operations in c++
-[Link](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
+**Sorry**
 
+Hold on for few more days
+
+Work in Progress!
