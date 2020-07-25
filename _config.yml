@@ -25,9 +25,9 @@ url                      :  #"https://github.com/Deshwal36"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Deshwal36/Algocorn3r"
 teaser                   : "/assets/images/code.jpg"
-logo                     : #"/assets/images/Shivam.jpg"
+logo                     : "/assets/images/code.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              :  false #, false (default)
+breadcrumbs              :  true #, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
