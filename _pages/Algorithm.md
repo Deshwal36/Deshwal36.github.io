@@ -7,4 +7,7 @@ header:
    images: "/assets/images/Deshwal.jpg"
 ---
 
-Algorithm posts will be comming soon!
+<details>
+           <summary>WIP</summary>
+           <p>Algorithm posts will be comming soon!</p>
+</details>

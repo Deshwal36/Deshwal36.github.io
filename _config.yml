@@ -20,11 +20,11 @@ title                    : "Algocorn3r"
 title_separator          : "-"
 subtitle                 : "Version 1.0"
 name                     : "Shivam Deshwal"
-description              : "The Algorithm corn3r : Blog dedicated to my understanding with alorithms"
+description              : "The Algorithm Corn3r : Site"
 url                      :  #"https://github.com/Deshwal36"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Deshwal36/Algocorn3r"
-teaser                   : "/assets/images/code.jpg"
+teaser                   : #"/assets/images/code.jpg"
 logo                     : "/assets/images/code.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              :  true #, false (default)
@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/images/Deshwal.jpg"
   bio              : "The Algorithm Corner"
   location         : "Gurugram , HR"
-  email            :  
+  email            :  "shivam.deshwal36@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
