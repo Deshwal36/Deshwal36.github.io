@@ -1,2 +1,1 @@
-![Blog](https://img.shields.io/badge/Portfolio-Blog-yellow)  
-![Blog](assets\images\HOME.png)
+[<img src='https://img.shields.io/badge/Portfolio-Blog-yellow'>](https://deshwal36.github.io/)
