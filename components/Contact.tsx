@@ -56,50 +56,55 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-background">
       <div ref={sectionRef} className="max-w-4xl mx-auto px-6">
         {/* Section header */}
-        <p className="font-mono text-accent text-sm mb-2">
-          {"< Contact />"}
-        </p>
-        <h2 className="text-3xl font-bold text-text mb-4">Get In Touch</h2>
-        <p className="text-muted mb-12 max-w-lg">
-          I&apos;m always open to interesting conversations, collaborations, or
-          just a chat about backend engineering and distributed systems.
-        </p>
+        <div className="animate-on-scroll">
+          <p className="font-mono text-accent text-sm mb-2">
+            {"< Contact />"}
+          </p>
+          <h2 className="text-3xl font-bold text-text mb-3">
+            Let&apos;s Build Something
+          </h2>
+          <p className="text-muted max-w-md mb-10">
+            Got an interesting problem to solve, a system to scale, or just want
+            to talk distributed systems? I&apos;m all ears.
+          </p>
+        </div>
 
-        {/* Contact cards */}
-        <div className="flex flex-col md:flex-row gap-4">
-          {contactCards.map((card, index) => (
+        {/* Contact links — inline minimal */}
+        <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll stagger-1">
+          {contactCards.map((card) => (
             <a
               key={card.label}
               href={card.href}
-              className={`bg-surface border border-border rounded-xl p-6 text-center hover:border-accent transition-all card-glow w-full group animate-on-scroll stagger-${index + 1}`}
+              className="group flex items-center gap-3 bg-surface border border-border rounded-lg px-5 py-4 hover:border-accent transition-all card-glow flex-1"
               {...(card.external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
             >
-              <div className="text-3xl mb-3" aria-hidden="true">
-                {card.icon}
+              <span className="text-xl">{card.icon}</span>
+              <div className="min-w-0">
+                <p className="text-muted text-xs font-mono">{card.label}</p>
+                <p className="text-accent text-sm font-medium truncate group-hover:underline">
+                  {card.display}
+                </p>
               </div>
-              <p className="text-muted text-sm font-mono mb-2">{card.label}</p>
-              <p className="text-accent font-medium break-all group-hover:underline">
-                {card.display}
-              </p>
+              <span className="ml-auto text-muted/30 group-hover:text-accent/50 transition-colors text-sm">
+                &rarr;
+              </span>
             </a>
           ))}
         </div>
 
-        {/* Divider */}
+        {/* Footer */}
         <div className="section-divider my-16" />
 
-        {/* Footer */}
-        <div className="text-center space-y-3">
-          <p className="text-muted text-sm font-mono">
-            Designed &amp; built with Next.js + Tailwind CSS
+        <footer className="text-center space-y-2 animate-on-scroll stagger-2">
+          <p className="text-muted text-sm">
+            Crafted with curiosity, caffeine, and a passion for clean code.
           </p>
-          <p className="text-muted/50 text-xs">
-            &copy; {new Date().getFullYear()} {profile.name}. All rights
-            reserved.
+          <p className="text-muted/40 text-xs font-mono">
+            &copy; {new Date().getFullYear()} {profile.name}
           </p>
-        </div>
+        </footer>
       </div>
     </section>
   );

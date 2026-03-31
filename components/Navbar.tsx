@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -51,15 +50,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="/Shivam_Deshwal_Resume.pdf"
-              download
-              className="px-4 py-2 rounded-md border border-accent text-accent text-sm font-mono hover:bg-accent hover:text-background transition-all"
-            >
-              Resume &darr;
-            </a>
-          </li>
         </ul>
 
         {/* Mobile hamburger */}

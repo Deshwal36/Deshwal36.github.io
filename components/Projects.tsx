@@ -27,25 +27,23 @@ export default function Projects() {
           &lt; Projects /&gt;
         </p>
         <h2 className="text-3xl font-bold text-text mb-4">Projects</h2>
-        <p className="text-muted mb-12 max-w-lg">
-          Academic and personal projects showcasing algorithmic thinking and
-          system design.
+        <p className="text-muted mb-10 max-w-lg">
+          Academic projects showcasing algorithmic thinking and system design.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`group bg-surface-2 border border-border rounded-xl p-6 hover:border-accent transition-all card-glow animate-on-scroll stagger-${index + 1}`}
+              className={`group bg-surface-2 border border-border rounded-xl p-5 hover:border-accent transition-all card-glow animate-on-scroll stagger-${index + 1}`}
             >
-              {/* Decorative code bracket */}
-              <div className="text-accent/20 font-mono text-4xl font-bold mb-2 group-hover:text-accent/40 transition-colors">
-                &#123;&#125;
+              <div className="flex items-start justify-between mb-2">
+                <p className="text-accent font-mono text-xs">{project.date}</p>
+                <span className="text-accent/30 font-mono text-sm group-hover:text-accent/60 transition-colors">
+                  &#123;&#125;
+                </span>
               </div>
-              <p className="text-accent font-mono text-xs font-semibold mb-2">
-                {project.date}
-              </p>
-              <h3 className="text-lg font-semibold text-text mb-3">
+              <h3 className="text-base font-semibold text-text mb-2">
                 {project.title}
               </h3>
               <p className="text-muted text-sm leading-relaxed">

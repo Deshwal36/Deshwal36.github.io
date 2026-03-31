@@ -7,7 +7,10 @@ const terminalLines = [
   { prompt: "$ whoami", output: profile.name },
   { prompt: "$ cat role.txt", output: profile.role },
   { prompt: "$ echo $LOCATION", output: profile.location },
-  { prompt: "$ uptime --experience", output: "7+ years | 4 companies | 3 domains" },
+  {
+    prompt: "$ uptime --experience",
+    output: "7+ years | 4 companies | 3 domains",
+  },
 ];
 
 const impactStats = [
@@ -22,7 +25,6 @@ export default function Hero() {
   const [typedText, setTypedText] = useState("");
   const fullTagline = profile.tagline;
 
-  // Terminal line reveal
   useEffect(() => {
     if (visibleLines < terminalLines.length) {
       const timer = setTimeout(() => setVisibleLines((v) => v + 1), 600);
@@ -30,7 +32,6 @@ export default function Hero() {
     }
   }, [visibleLines]);
 
-  // Typing effect for tagline
   useEffect(() => {
     if (typedText.length < fullTagline.length) {
       const timer = setTimeout(
@@ -70,13 +71,24 @@ export default function Hero() {
         <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
           {/* Left: text content */}
           <div className="flex-1 flex flex-col gap-6 animate-fade-in text-center lg:text-left">
-            <span className="font-mono text-accent text-sm tracking-wide">
-              {"< Senior Software Engineer />"}
-            </span>
-
-            <h1 className="text-4xl md:text-6xl font-bold text-text leading-tight">
-              {profile.name}
-            </h1>
+            {/* Avatar + Name row */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-center gap-5">
+              <img
+                src={profile.avatar}
+                alt={`${profile.name} profile photo`}
+                width={72}
+                height={72}
+                className="w-[72px] h-[72px] rounded-full border-2 border-accent object-cover shadow-lg shadow-accent/10 flex-shrink-0"
+              />
+              <div>
+                <span className="font-mono text-accent text-sm tracking-wide block mb-1">
+                  {"< Senior Software Engineer />"}
+                </span>
+                <h1 className="text-4xl md:text-5xl font-bold text-text leading-tight">
+                  {profile.name}
+                </h1>
+              </div>
+            </div>
 
             {/* Typing tagline */}
             <p className="text-xl text-muted h-8">
@@ -89,7 +101,7 @@ export default function Hero() {
             </p>
 
             {/* CTA buttons */}
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <button
                 onClick={handleScrollToExperience}
                 className="group px-6 py-3 rounded-lg bg-accent text-background font-semibold text-sm hover:bg-accent/90 transition-all hover:shadow-lg hover:shadow-accent/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
@@ -104,15 +116,7 @@ export default function Hero() {
                 download
                 className="px-6 py-3 rounded-lg border border-accent text-accent font-semibold text-sm hover:bg-accent hover:text-background transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
               >
-                Download Resume &darr;
-              </a>
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-lg border border-border text-text font-semibold text-sm hover:border-accent hover:text-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
-              >
-                GitHub
+                Resume &darr;
               </a>
             </div>
 
@@ -160,17 +164,6 @@ export default function Hero() {
                 )}
               </div>
             </div>
-
-            {/* Avatar below terminal */}
-            <div className="flex justify-center mt-6">
-              <img
-                src={profile.avatar}
-                alt={`${profile.name} profile photo`}
-                width={80}
-                height={80}
-                className="w-20 h-20 rounded-full border-2 border-accent object-cover shadow-lg shadow-accent/10"
-              />
-            </div>
           </div>
         </div>
 
@@ -184,7 +177,9 @@ export default function Hero() {
               <p className="text-3xl font-bold text-accent group-hover:scale-110 transition-transform inline-block">
                 {stat.value}
               </p>
-              <p className="text-muted text-xs font-mono mt-1">{stat.label}</p>
+              <p className="text-muted text-xs font-mono mt-1">
+                {stat.label}
+              </p>
             </div>
           ))}
         </div>
